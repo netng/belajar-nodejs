@@ -1,0 +1,491 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Upps",
+    "trigger": "Exception",
+    "filename": "error-report.json",
+    "dumpEventTime": "2024-06-04T10:07:59Z",
+    "dumpEventTimeStamp": "1717470479372",
+    "processId": 27767,
+    "threadId": 0,
+    "cwd": "/home/yuna/Development/belajar/nodejs/pzn/nodejs-dasar/standar-libraries",
+    "commandLine": [
+      "node",
+      "report.mjs"
+    ],
+    "nodejsVersion": "v16.10.0",
+    "glibcVersionRuntime": "2.35",
+    "glibcVersionCompiler": "2.17",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "16.10.0",
+      "v8": "9.3.345.19-node.14",
+      "uv": "1.42.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.9",
+      "ares": "1.17.2",
+      "modules": "93",
+      "nghttp2": "1.42.0",
+      "napi": "8",
+      "llhttp": "6.0.2",
+      "openssl": "1.1.1l+quic",
+      "cldr": "39.0",
+      "icu": "69.1",
+      "tz": "2021a",
+      "unicode": "13.0",
+      "ngtcp2": "0.1.0-DEV",
+      "nghttp3": "0.1.0-DEV"
+    },
+    "release": {
+      "name": "node",
+      "headersUrl": "https://nodejs.org/download/release/v16.10.0/node-v16.10.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v16.10.0/node-v16.10.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "5.15.0-107-generic",
+    "osVersion": "#117-Ubuntu SMP Fri Apr 26 12:26:49 UTC 2024",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz",
+        "speed": 3300,
+        "user": 400900,
+        "nice": 540,
+        "sys": 101860,
+        "idle": 6948000,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz",
+        "speed": 3073,
+        "user": 366460,
+        "nice": 510,
+        "sys": 99480,
+        "idle": 6964050,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz",
+        "speed": 3078,
+        "user": 385860,
+        "nice": 440,
+        "sys": 100540,
+        "idle": 6964440,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz",
+        "speed": 3300,
+        "user": 394160,
+        "nice": 460,
+        "sys": 97680,
+        "idle": 6966750,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "wlp3s0",
+        "internal": false,
+        "mac": "6c:88:14:8e:0b:24",
+        "address": "192.168.137.48",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "wlp3s0",
+        "internal": false,
+        "mac": "6c:88:14:8e:0b:24",
+        "address": "fe80::4c0b:3b4e:427e:2b26",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 3
+      }
+    ],
+    "host": "yuna"
+  },
+  "javascriptStack": {
+    "message": "Error: Upps",
+    "stack": [
+      "at sampleError (file:///home/yuna/Development/belajar/nodejs/pzn/nodejs-dasar/standar-libraries/report.mjs:9:11)",
+      "at file:///home/yuna/Development/belajar/nodejs/pzn/nodejs-dasar/standar-libraries/report.mjs:12:1",
+      "at ModuleJob.run (node:internal/modules/esm/module_job:183:25)",
+      "at async Loader.import (node:internal/modules/esm/loader:178:24)",
+      "at async Object.loadESM (node:internal/process/esm_loader:68:5)"
+    ],
+    "errorProperties": {
+    }
+  },
+  "javascriptHeap": {
+    "totalMemory": 4837376,
+    "totalCommittedMemory": 3859088,
+    "usedMemory": 4147416,
+    "availableMemory": 2194570440,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 176128,
+        "committedMemory": 176128,
+        "capacity": 170264,
+        "used": 170264,
+        "available": 0
+      },
+      "old_space": {
+        "memorySize": 2973696,
+        "committedMemory": 2844448,
+        "capacity": 2917200,
+        "used": 2917176,
+        "available": 24
+      },
+      "code_space": {
+        "memorySize": 368640,
+        "committedMemory": 112224,
+        "capacity": 332416,
+        "used": 332416,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 270336,
+        "committedMemory": 239152,
+        "capacity": 257912,
+        "used": 257912,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 0,
+        "used": 0,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1031072,
+        "used": 0,
+        "available": 1031072
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 487136,
+        "capacity": 1031072,
+        "used": 469648,
+        "available": 561424
+      }
+    }
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000000b812b4",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::string const&, v8::Local<v8::Value>) [node]"
+    },
+    {
+      "pc": "0x0000000000b83a08",
+      "symbol": "report::WriteReport(v8::FunctionCallbackInfo<v8::Value> const&) [node]"
+    },
+    {
+      "pc": "0x0000000000d4339b",
+      "symbol": " [node]"
+    },
+    {
+      "pc": "0x0000000000d4462c",
+      "symbol": " [node]"
+    },
+    {
+      "pc": "0x0000000000d44b06",
+      "symbol": "v8::internal::Builtin_HandleApiCall(int, unsigned long*, v8::internal::Isolate*) [node]"
+    },
+    {
+      "pc": "0x00000000015e8099",
+      "symbol": " [node]"
+    }
+  ],
+  "resourceUsage": {
+    "userCpuSeconds": 0.050919,
+    "kernelCpuSeconds": 0.007833,
+    "cpuConsumptionPercent": 5.8752,
+    "maxRss": 33050624,
+    "pageFaults": {
+      "IORequired": 18,
+      "IONotRequired": 2395
+    },
+    "fsActivity": {
+      "reads": 1680,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 0.050551,
+    "kernelCpuSeconds": 0.007777,
+    "cpuConsumptionPercent": 5.8328,
+    "fsActivity": {
+      "reads": 1680,
+      "writes": 0
+    }
+  },
+  "libuv": [
+    {
+      "type": "async",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x00000000063b0aa0"
+    },
+    {
+      "type": "async",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x000000000487ff80"
+    },
+    {
+      "type": "timer",
+      "is_active": false,
+      "is_referenced": false,
+      "address": "0x0000000006471200",
+      "repeat": 0,
+      "firesInMsFromNow": -7537004,
+      "expired": true
+    },
+    {
+      "type": "check",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x0000000006471298"
+    },
+    {
+      "type": "idle",
+      "is_active": false,
+      "is_referenced": true,
+      "address": "0x0000000006471310"
+    },
+    {
+      "type": "prepare",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x0000000006471388"
+    },
+    {
+      "type": "check",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x0000000006471400"
+    },
+    {
+      "type": "async",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x0000000006471478"
+    },
+    {
+      "type": "tty",
+      "is_active": false,
+      "is_referenced": true,
+      "address": "0x0000000006387e10",
+      "width": 127,
+      "height": 12,
+      "fd": 17,
+      "writeQueueSize": 0,
+      "readable": true,
+      "writable": true
+    },
+    {
+      "type": "signal",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x000000000647e648",
+      "signum": 28,
+      "signal": "SIGWINCH"
+    },
+    {
+      "type": "tty",
+      "is_active": false,
+      "is_referenced": true,
+      "address": "0x00000000064d6660",
+      "width": 127,
+      "height": 12,
+      "fd": 19,
+      "writeQueueSize": 0,
+      "readable": true,
+      "writable": true
+    },
+    {
+      "type": "tty",
+      "is_active": false,
+      "is_referenced": true,
+      "address": "0x00000000064d6840",
+      "width": 127,
+      "height": 12,
+      "fd": 20,
+      "writeQueueSize": 0,
+      "readable": true,
+      "writable": true
+    },
+    {
+      "type": "signal",
+      "is_active": true,
+      "is_referenced": false,
+      "address": "0x00000000064d8a78",
+      "signum": 12,
+      "signal": "SIGUSR2"
+    },
+    {
+      "type": "loop",
+      "is_active": false,
+      "address": "0x000000000488c360",
+      "loopIdleTimeSeconds": 1.7137e-05
+    }
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "SHELL": "/bin/bash",
+    "SESSION_MANAGER": "local/yuna:@/tmp/.ICE-unix/1923,unix/yuna:/tmp/.ICE-unix/1923",
+    "QT_ACCESSIBILITY": "1",
+    "COLORTERM": "truecolor",
+    "XDG_CONFIG_DIRS": "/etc/xdg/xdg-cinnamon:/etc/xdg",
+    "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session0",
+    "NVM_INC": "/home/yuna/.nvm/versions/node/v16.10.0/include/node",
+    "TERM_PROGRAM_VERSION": "1.89.1",
+    "GNOME_DESKTOP_SESSION_ID": "this-is-deprecated",
+    "LANGUAGE": "en_US",
+    "LC_ADDRESS": "id_ID.UTF-8",
+    "LC_NAME": "id_ID.UTF-8",
+    "SSH_AUTH_SOCK": "/run/user/1000/keyring/ssh",
+    "CINNAMON_VERSION": "6.0.4",
+    "DESKTOP_SESSION": "cinnamon",
+    "LC_MONETARY": "id_ID.UTF-8",
+    "RBENV_SHELL": "bash",
+    "GTK_MODULES": "gail:atk-bridge",
+    "XDG_SEAT": "seat0",
+    "PWD": "/home/yuna/Development/belajar/nodejs/pzn/nodejs-dasar/standar-libraries",
+    "XDG_SESSION_DESKTOP": "cinnamon",
+    "LOGNAME": "yuna",
+    "QT_QPA_PLATFORMTHEME": "qt5ct",
+    "XDG_SESSION_TYPE": "x11",
+    "GPG_AGENT_INFO": "/run/user/1000/gnupg/S.gpg-agent:0:1",
+    "XAUTHORITY": "/home/yuna/.Xauthority",
+    "VSCODE_GIT_ASKPASS_NODE": "/usr/share/code/code",
+    "XDG_GREETER_DATA_DIR": "/var/lib/lightdm-data/yuna",
+    "GDM_LANG": "en_US",
+    "HOME": "/home/yuna",
+    "LC_PAPER": "id_ID.UTF-8",
+    "LANG": "en_US.UTF-8",
+    "LS_COLORS": "rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:",
+    "XDG_CURRENT_DESKTOP": "X-Cinnamon",
+    "VTE_VERSION": "6800",
+    "GIT_ASKPASS": "/usr/share/code/resources/app/extensions/git/dist/askpass.sh",
+    "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+    "GNOME_TERMINAL_SCREEN": "/org/gnome/Terminal/screen/8e118201_db21_4d05_ae96_57c2868c7539",
+    "CHROME_DESKTOP": "code-url-handler.desktop",
+    "NVM_DIR": "/home/yuna/.nvm",
+    "VSCODE_GIT_ASKPASS_EXTRA_ARGS": "",
+    "LESSCLOSE": "/usr/bin/lesspipe %s %s",
+    "XDG_SESSION_CLASS": "user",
+    "LC_IDENTIFICATION": "id_ID.UTF-8",
+    "TERM": "xterm-256color",
+    "LESSOPEN": "| /usr/bin/lesspipe %s",
+    "USER": "yuna",
+    "VSCODE_GIT_IPC_HANDLE": "/run/user/1000/vscode-git-29b49903c7.sock",
+    "GNOME_TERMINAL_SERVICE": ":1.74",
+    "DISPLAY": ":0",
+    "SHLVL": "2",
+    "NVM_CD_FLAGS": "",
+    "LC_TELEPHONE": "id_ID.UTF-8",
+    "LC_MEASUREMENT": "id_ID.UTF-8",
+    "XDG_VTNR": "7",
+    "XDG_SESSION_ID": "c4",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "PS1": "\\[\u001b]633;A\u0007\\]\\u@\\h \\[\\e[32m\\]\\w \\[\\e[91m\\]$(parse_git_branch)\\[\\e[00m\\]$ \\[\u001b]633;B\u0007\\]",
+    "VSCODE_GIT_ASKPASS_MAIN": "/usr/share/code/resources/app/extensions/git/dist/askpass-main.js",
+    "GTK3_MODULES": "xapp-gtk3-module",
+    "XDG_DATA_DIRS": "/usr/share/cinnamon:/usr/share/gnome:/home/yuna/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share",
+    "GDK_BACKEND": "x11",
+    "PATH": "/home/yuna/.rbenv/shims:/home/yuna/.rbenv/bin:/home/yuna/.nvm/versions/node/v16.10.0/bin:/home/yuna/.rbenv/shims:/home/yuna/.rbenv/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+    "GDMSESSION": "cinnamon",
+    "ORIGINAL_XDG_CURRENT_DESKTOP": "X-Cinnamon",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "NVM_BIN": "/home/yuna/.nvm/versions/node/v16.10.0/bin",
+    "LC_NUMERIC": "id_ID.UTF-8",
+    "OLDPWD": "/home/yuna/Development/belajar/nodejs/pzn/nodejs-dasar",
+    "TERM_PROGRAM": "vscode",
+    "_": "/home/yuna/.nvm/versions/node/v16.10.0/bin/node"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": 1543274496,
+      "hard": 1543274496
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 46579,
+      "hard": 46579
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/lib/x86_64-linux-gnu/libdl.so.2",
+    "/lib/x86_64-linux-gnu/libstdc++.so.6",
+    "/lib/x86_64-linux-gnu/libm.so.6",
+    "/lib/x86_64-linux-gnu/libgcc_s.so.1",
+    "/lib/x86_64-linux-gnu/libpthread.so.0",
+    "/lib/x86_64-linux-gnu/libc.so.6",
+    "/lib64/ld-linux-x86-64.so.2"
+  ]
+}
