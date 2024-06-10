@@ -9,3 +9,21 @@ export const sumAll = (numbers) => {
     }
     return total
 }
+
+export const calculate = (numbers, callback) => {
+    let total = 0
+    for (const number of numbers) {
+        total += number
+    }
+
+    callback(total, 'nandang')
+}
+
+export const calculateAndReturn = (numbers, callback) => {
+    let total = 0
+    for (const number of numbers) {
+        total += number
+    }
+
+    return callback(total)
+}

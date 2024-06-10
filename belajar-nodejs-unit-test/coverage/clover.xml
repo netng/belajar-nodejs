@@ -1,15 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1717666135388" clover="3.2.0">
-  <project timestamp="1717666135389" name="All files">
-    <metrics statements="17" coveredstatements="17" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6" elements="27" coveredelements="27" complexity="0" loc="17" ncloc="17" packages="1" files="3" classes="3"/>
+<coverage generated="1717993056403" clover="3.2.0">
+  <project timestamp="1717993056404" name="All files">
+    <metrics statements="40" coveredstatements="38" conditionals="6" coveredconditionals="6" methods="14" coveredmethods="12" elements="60" coveredelements="56" complexity="0" loc="40" ncloc="40" packages="1" files="6" classes="6"/>
     <file name="async.js" path="/home/yuna/Development/belajar/nodejs/pzn/belajar-nodejs-unit-test/src/async.js">
-      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
-      <line num="1" count="1" type="stmt"/>
-      <line num="2" count="3" type="stmt"/>
-      <line num="3" count="3" type="stmt"/>
-      <line num="4" count="3" type="cond" truecount="2" falsecount="0"/>
-      <line num="5" count="2" type="stmt"/>
+      <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+      <line num="1" count="3" type="stmt"/>
+      <line num="2" count="6" type="stmt"/>
+      <line num="3" count="6" type="stmt"/>
+      <line num="4" count="6" type="cond" truecount="2" falsecount="0"/>
+      <line num="5" count="5" type="stmt"/>
       <line num="7" count="1" type="stmt"/>
+      <line num="14" count="3" type="stmt"/>
+      <line num="15" count="3" type="stmt"/>
+      <line num="16" count="1" type="stmt"/>
+    </file>
+    <file name="database.js" path="/home/yuna/Development/belajar/nodejs/pzn/belajar-nodejs-unit-test/src/database.js">
+      <metrics statements="4" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+      <line num="1" count="2" type="stmt"/>
+      <line num="3" count="0" type="stmt"/>
+      <line num="6" count="2" type="stmt"/>
+      <line num="8" count="0" type="stmt"/>
     </file>
     <file name="exception.js" path="/home/yuna/Development/belajar/nodejs/pzn/belajar-nodejs-unit-test/src/exception.js">
       <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
@@ -18,15 +28,37 @@
       <line num="7" count="3" type="stmt"/>
       <line num="9" count="1" type="stmt"/>
     </file>
+    <file name="product-service.js" path="/home/yuna/Development/belajar/nodejs/pzn/belajar-nodejs-unit-test/src/product-service.js">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <line num="5" count="1" type="stmt"/>
+      <line num="9" count="1" type="stmt"/>
+    </file>
+    <file name="sayHello.js" path="/home/yuna/Development/belajar/nodejs/pzn/belajar-nodejs-unit-test/src/sayHello.js">
+      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+      <line num="1" count="1" type="stmt"/>
+      <line num="2" count="2" type="cond" truecount="2" falsecount="0"/>
+      <line num="3" count="1" type="stmt"/>
+      <line num="5" count="1" type="stmt"/>
+    </file>
     <file name="sum.js" path="/home/yuna/Development/belajar/nodejs/pzn/belajar-nodejs-unit-test/src/sum.js">
-      <metrics statements="7" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
-      <line num="1" count="3" type="stmt"/>
+      <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+      <line num="1" count="6" type="stmt"/>
       <line num="2" count="5" type="stmt"/>
-      <line num="5" count="3" type="stmt"/>
-      <line num="6" count="2" type="stmt"/>
-      <line num="7" count="2" type="stmt"/>
-      <line num="8" count="6" type="stmt"/>
-      <line num="10" count="2" type="stmt"/>
+      <line num="5" count="6" type="stmt"/>
+      <line num="6" count="4" type="stmt"/>
+      <line num="7" count="4" type="stmt"/>
+      <line num="8" count="14" type="stmt"/>
+      <line num="10" count="4" type="stmt"/>
+      <line num="13" count="6" type="stmt"/>
+      <line num="14" count="4" type="stmt"/>
+      <line num="15" count="4" type="stmt"/>
+      <line num="16" count="16" type="stmt"/>
+      <line num="19" count="4" type="stmt"/>
+      <line num="22" count="6" type="stmt"/>
+      <line num="23" count="4" type="stmt"/>
+      <line num="24" count="4" type="stmt"/>
+      <line num="25" count="15" type="stmt"/>
+      <line num="28" count="4" type="stmt"/>
     </file>
   </project>
 </coverage>

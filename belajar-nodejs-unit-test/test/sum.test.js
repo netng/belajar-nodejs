@@ -50,7 +50,7 @@ test("test toBe", () => {
     expect(hello).toBe('hello nandang')
 })
 
-test.skip("truthiness", () => {
+test("truthiness", () => {
     let value = null
     
     expect(value).toBeNull()
