@@ -1,0 +1,26 @@
+{
+  "name": "belajar-nodejs-validation",
+  "version": "1.0.0",
+  "description": "Belajar NodeJS Validation Menggunakan JOI",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "nodejs",
+    "validation",
+    "joi"
+  ],
+  "author": "Nandang Sopyan",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@babel/preset-env": "^7.24.7",
+    "@types/jest": "^29.5.12",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "joi": "^17.13.1"
+  }
+}
