@@ -19,3 +19,11 @@ export const deleteUser = async () => {
         }
     })
 }
+
+export const getUser = async () => {
+    return prismaClient.user.findUnique({
+        where: {
+            username: 'test'
+        }
+    })
+}

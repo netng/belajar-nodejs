@@ -1,13 +1,14 @@
 import { prismaClient } from "../application/database.js"
+import { logger } from "../application/logging.js"
 import { ResponseError } from "../error/response-error.js"
-import { userLoginValidation, userRegistrationValidation } from "../validation/user-validation.js"
+import { getUserValidation, loginUserValidation, registerUserValidation, updateUserValidation } from "../validation/user-validation.js"
 import { validate } from "../validation/validation.js"
 import bcrypt from "bcrypt"
 import { v4 as uuid } from 'uuid'
 
 const register = async (request) => {
     // validasi payload
-    const user = validate(userRegistrationValidation, request)
+    const user = validate(registerUserValidation, request)
 
     // cek apakah username sudah ada
     const countUser = await prismaClient.user.count({
@@ -34,7 +35,7 @@ const register = async (request) => {
 }
 
 const login = async (request) => {
-    const loginRequest = validate(userLoginValidation, request)
+    const loginRequest = validate(loginUserValidation, request)
 
     const user = await prismaClient.user.findUnique({
         where: {
@@ -70,7 +71,66 @@ const login = async (request) => {
 
 }
 
+const get = async (username) => {
+    username = validate(getUserValidation, username)
+
+    const currentUser = await prismaClient.user.findUnique({
+        where: {
+            username: username
+        },
+        select: {
+            username: true,
+            name: true
+        }
+    })
+
+    if (!currentUser) {
+        throw new ResponseError(404, 'User not found')
+    }
+
+    return currentUser
+}
+
+const update = async (request) => {
+    const user = validate(updateUserValidation, request)
+
+    const userCount = await prismaClient.user.count({
+        where: {
+            username: user.username
+        }
+    })
+
+
+    if (userCount !== 1) {
+        logger.info('INVOKED')
+        throw new ResponseError(401, 'Unauthorized')
+    }
+
+    const data = {}
+
+    if (request.name) {
+        data.name = request.name
+    }
+
+    if (request.password) {
+        data.password = await bcrypt.hash(request.password, 10)
+    }
+
+    return prismaClient.user.update({
+        where: {
+            username: user.username
+        },
+        data: data,
+        select: {
+            username: true,
+            name: true
+        }
+    })
+}
+
 export default {
     register,
-    login
+    login,
+    get,
+    update
 }
