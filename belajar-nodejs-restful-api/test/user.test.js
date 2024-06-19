@@ -237,3 +237,38 @@ describe('PATH /api/users/current', () => {
         expect(response.body.errors).toBeDefined()
     });
 });
+
+
+describe('DELETE /api/users/logout', () => {
+    beforeEach(async () => {
+        await createUser()
+    })
+
+    afterEach(async () => {
+      await deleteUser()
+    })
+
+    it('should can logout', async () => {
+        const response = await supertest(web)
+            .delete('/api/users/logout')
+            .set('Authorization', 'test')
+        
+        logger.info(response)
+            
+        const user = await getUser()
+            
+        expect(response.status).toBe(200)
+        expect(response.body.data).toBe('OK')
+        expect(user.token).toBeNull()
+    });
+
+    it('should reject if token is invalid', async () => {
+        const response = await supertest(web)
+            .delete('/api/users/logout')
+            .set('Authorization', 'invalid')
+        
+        const user = await getUser()
+            
+        expect(response.status).toBe(401)
+    });
+});
