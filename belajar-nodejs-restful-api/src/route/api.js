@@ -22,3 +22,7 @@ router.get('/api/contacts', contactController.search)
 
 // addresses API
 router.post('/api/contacts/:contactId/addresses', addressController.create)
+router.get('/api/contacts/:contactId/addresses/:addressId', addressController.get)
+router.put('/api/contacts/:contactId/addresses/:addressId', addressController.update)
+router.delete('/api/contacts/:contactId/addresses/:addressId', addressController.destroy)
+router.get('/api/contacts/:contactId/addresses', addressController.list)

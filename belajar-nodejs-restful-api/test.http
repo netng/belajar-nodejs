@@ -1,0 +1,168 @@
+### this httpclient by humao.rest-client vscode extensions
+
+### User API
+
+### Register user
+POST http://localhost:3000/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username": "nandang",
+    "password": "rahasia",
+    "name": "nandang sopyan"
+}
+
+### Login user
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username": "nandang",
+    "password": "secret"
+}
+
+### Update user
+PATCH http://localhost:3000/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: {{token}}
+
+{
+    "name": "nandang sopyan",
+    "password": "secret"
+}
+
+### Get current user
+GET http://localhost:3000/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: {{token}}
+
+### Logout
+DELETE http://localhost:3000/api/users/logout
+Content-Type: application/json
+Accept: application/json
+Authorization: {{token}}
+
+
+### Contact API
+
+### Create a new contact
+POST http://localhost:3000/api/contacts
+Content-Type: application/json
+Accept: application/json
+Authorization: {{token}}
+
+{
+    "first_name": "nandang",
+    "last_name": "sopyan",
+    "email": "nandang@sopyan.com",
+    "phone": "012345678"
+}
+
+
+### Create a new contact with invalid request
+POST http://localhost:3000/api/contacts
+Content-Type: application/json
+Accept: application/json
+Authorization: {{token}}
+
+{
+    "first_name": "",
+    "last_name": "",
+    "email": "",
+    "phone": ""
+}
+
+### Update a contact
+PUT http://localhost:3000/api/contacts/1655
+Content-Type: application/json
+Accept: application/json
+Authorization: {{token}}
+
+{
+    "first_name": "nandang updated",
+    "last_name": "sopyan updated",
+    "email": "nandangupdated@sopyan.com",
+    "phone": "01234567810"
+}
+
+### Get a contact
+GET  http://localhost:3000/api/contacts/1655
+Content-Type: application/json
+Authorization: {{token}}
+
+### Search contact
+GET  http://localhost:3000/api/contacts
+Content-Type: application/json
+Authorization: {{token}}
+
+### Search contact with filter by page & size
+GET  http://localhost:3000/api/contacts
+    ?page=1
+    &size=2
+Content-Type: application/json
+Authorization: {{token}}
+
+### Search contact with filter by name
+GET  http://localhost:3000/api/contacts
+    ?name=update
+Content-Type: application/json
+Authorization: {{token}}
+
+### Search contact with filter by email
+GET  http://localhost:3000/api/contacts
+    ?email=update
+Content-Type: application/json
+Authorization: {{token}}
+
+### Destroy a contact
+DELETE http://localhost:3000/api/contacts/1655
+Content-Type: application/json
+Authorization: {{token}}
+
+
+### Address API
+
+### Create a new contact address
+POST http://localhost:3000/api/contacts/1653/addresses
+Content-Type: application/json
+Accept: application/json
+Authorization: {{token}}
+
+{
+    "street" : "test street",
+    "city" : "test city",
+    "province" : "test province",
+    "country" : "test country",
+    "postal_code" : "00000"
+}
+
+### Update a contact address
+PUT http://localhost:3000/api/contacts/1653/addresses/114
+Content-Type: application/json
+Accept: application/json
+Authorization: {{token}}
+
+{
+    "street" : "updated street",
+    "city" : "updated city",
+    "province" : "updated province",
+    "country" : "updated country",
+    "postal_code" : "000001"
+}
+
+### Get a contact address
+GET http://localhost:3000/api/contacts/1653/addresses/114
+Content-Type: application/json
+Accept: application/json
+Authorization: {{token}}
+
+
+### Destroy a contact address
+DELETE http://localhost:3000/api/contacts/1653/addresses/114
+Content-Type: application/json
+Accept: application/json
+Authorization: {{token}}

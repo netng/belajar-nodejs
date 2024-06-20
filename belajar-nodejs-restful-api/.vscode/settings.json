@@ -15,5 +15,14 @@
             "password": "root"
         }
     ],
-    "jest.runMode": "on-demand"
+    "jest.runMode": "on-demand",
+    "rest-client.environmentVariables": {
+        "$shared": {
+            "token": "82beb74b-3626-45f8-8a14-6073467649a2"
+            
+        },
+        "dev": {
+            "token": "{{$shared token}}"
+        }
+    }
 }
