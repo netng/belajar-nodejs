@@ -166,3 +166,9 @@ DELETE http://localhost:3000/api/contacts/1653/addresses/114
 Content-Type: application/json
 Accept: application/json
 Authorization: {{token}}
+
+### List contact addresses
+GET http://localhost:3000/api/contacts/1653/addresses
+Content-Type: application/json
+Accept: application/json
+Authorization: {{token}}
